@@ -12,5 +12,5 @@ module.exports = class SleepBeforeOnCompile
       deferred.resolve()
     noopFn2 = ->
     setTimeout noopFn1, @sleepMillis
-    deferred.then noopFn2
+    deferred.promise.then noopFn2
     return
