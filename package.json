@@ -1,0 +1,21 @@
+{
+  "name": "brunch-sleep-before-oncompile",
+  "version": "0.0.1",
+  "description": "A micro-plugin to pause before brunch's onCompile phase.",
+  "main": "./lib/index",
+  "dependencies": {
+    "q": "^1.0.1"
+  },
+  "scripts": {
+    "prepublish": "rm -rf lib && coffee --bare --output lib/ src/"
+  },
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EDITME"
+  },
+  "keywords": [
+    "brunch"
+  ],
+  "devDependencies": {}
+}
